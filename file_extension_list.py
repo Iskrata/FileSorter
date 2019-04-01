@@ -8,3 +8,13 @@ extensions = {
 'Setups': ['.exe', '.jar', '.osz', '.msi'],
 'Scripts': ['.py']
 }
+
+extensions_folder_dict = {
+'.ppt': 'PowerPoint',
+'.xlsx': 'Excel',
+'.xls': 'Excel',
+'.docx': 'Word',
+'.doc': 'Word',
+'.pdf': 'Pdf',
+'.txt': 'Txt'
+}
