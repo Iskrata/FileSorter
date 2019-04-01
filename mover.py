@@ -65,5 +65,6 @@ for document in documents:
                         shutil.move(document_dir, path_to_destination_folder)
         
 
+# TODO: opravi buga kogato ne shte dve papki da gi puhne na edno mqsto - trqbva ednata da q preimenuva
 # TODO: optimizirai da ne chekva za vseki edin ekstenshun faila
 # TODO: da mu davash argument

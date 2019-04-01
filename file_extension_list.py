@@ -7,7 +7,8 @@ extensions = {
 'Books': ['.epub'],
 'Setups': ['.exe', '.jar', '.osz', '.msi'],
 'Scripts': ['.py', '.h'],
-'Folders': ['.zip', '.7z', '.rar']
+'Folders': ['.zip', '.7z', '.rar'],
+'Subtitle': ['str']
 }
 
 extensions_folder_dict = {
