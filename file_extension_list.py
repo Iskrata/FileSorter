@@ -6,7 +6,8 @@ extensions = {
 'Videos': ['.mp4'],
 'Books': ['.epub'],
 'Setups': ['.exe', '.jar', '.osz', '.msi'],
-'Scripts': ['.py']
+'Scripts': ['.py', '.h'],
+'Folders': ['.zip', '.7z', '.rar']
 }
 
 extensions_folder_dict = {

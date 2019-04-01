@@ -1,4 +1,5 @@
 import glob, os
+import sys, getopt
 import shutil
 import argparse
 import file_extension_list
@@ -18,11 +19,21 @@ def check_for_folder_and_create(path_to_the_folder):
                 os.mkdir(path_to_the_folder)
 
 for f in files:
-        # print(f)
+
+        # check if the current file is folder
+        if os.path.isdir(os.path.join(files_dir, f)) and f not in extensions:
+                path_to_destination_folder = os.path.join(files_dir, 'Folders')
+                file_path_before_leave = os.path.join(files_dir, f)
+
+                check_for_folder_and_create(path_to_destination_folder)
+
+                shutil.move(file_path_before_leave, path_to_destination_folder)
+
+                print('Moved', f, 'in', path_to_destination_folder)
 
         filename, file_extension = os.path.splitext(os.path.join(files_dir, f))
         for type_of_file in extensions:
-                if file_extension in extensions[type_of_file]:
+                if file_extension in extensions[type_of_file] and f not in extensions:
                         
                         path_to_destination_folder = os.path.join(files_dir, type_of_file)
                         file_path_before_leave = os.path.join(files_dir, f)
@@ -54,5 +65,5 @@ for document in documents:
                         shutil.move(document_dir, path_to_destination_folder)
         
 
+# TODO: optimizirai da ne chekva za vseki edin ekstenshun faila
 # TODO: da mu davash argument
-# TODO: make to work with folders and zip ATTENTION: folders shoudn't be from the list
