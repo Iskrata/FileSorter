@@ -8,7 +8,7 @@ extensions = {
 'Setups': ['.exe', '.jar', '.osz', '.msi'],
 'Scripts': ['.py', '.h'],
 'Folders': ['.zip', '.7z', '.rar'],
-'Subtitle': ['str']
+'Subtitles': ['str']
 }
 
 extensions_folder_dict = {
