@@ -1,4 +1,3 @@
-
 extensions = {
 'Documents': ['.xls', '.xlsx', '.docx', 'doc', '.txt', '.pdf'],
 'Images': ['.jpg', '.jpeg', '.png', '.xcf'],
@@ -8,7 +7,7 @@ extensions = {
 'Setups': ['.exe', '.jar', '.osz', '.msi'],
 'Scripts': ['.py', '.h'],
 'Folders': ['.zip', '.7z', '.rar'],
-'Subtitles': ['str']
+'Subtitle': ['str']
 }
 
 extensions_folder_dict = {

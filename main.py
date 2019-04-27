@@ -114,7 +114,7 @@ for file in files:
 
 
 # Sort different type of documents
-documents_dir = os.path.join(files_dir, 'Documents\\')
+documents_dir = os.path.join(files_dir, 'Documents')
 documents = os.listdir(documents_dir)
 
 for document in documents:
